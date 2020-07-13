@@ -38,21 +38,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install
-        run: |
-          npm install
-
-      - name: Build
-        run: |
-          npm build
-
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@master
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: master
-          REPOSITORY_NAME: "devops-club/devops-star"
           FOLDER: build
+          BUILD_SCRIPT: npm install && npm run build
           CLEAN: true
           CLEAN_EXCLUDE: '["CNAME"]'
         continue-on-error: true

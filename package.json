@@ -2,7 +2,7 @@
   "name": "devops-star",
   "version": "1.0.0",
   "description": "DevOps Star. Coded by Dana",
-  "homepage": "http://devops-club.github.io.com/devops-star",
+  "homepage": "http://devops-club.github.io.com/devops",
   "private": true,
   "main": "src/index.js",
   "dependencies": {

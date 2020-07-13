@@ -1,7 +1,8 @@
 {
-  "name": "material-kit-react",
-  "version": "1.9.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "name": "devops-star",
+  "version": "1.0.0",
+  "description": "DevOps Star. Coded by Dana",
+  "homepage": "https://devops-club.github.io/devops-star",
   "private": true,
   "main": "src/index.js",
   "dependencies": {

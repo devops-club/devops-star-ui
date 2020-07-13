@@ -38,13 +38,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - name: Install
+        run: |
+          npm install
+
+      - name: Build
+        run: |
+          npm build
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
           CLEAN: true
           CLEAN_EXCLUDE: '["CNAME"]'
         continue-on-error: true

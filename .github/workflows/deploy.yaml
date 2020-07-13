@@ -47,11 +47,9 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-          CLEAN: true
-          CLEAN_EXCLUDE: '["CNAME"]'
-        continue-on-error: true
+

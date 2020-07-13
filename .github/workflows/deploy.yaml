@@ -47,11 +47,12 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build
           REPOSITORY_NAME: "devops-club/devops"
+          FOLDER: build
           CLEAN: true
-
+          CLEAN_EXCLUDE: '["CNAME"]'
+        continue-on-error: true

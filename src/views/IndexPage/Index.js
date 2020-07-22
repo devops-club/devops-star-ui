@@ -44,7 +44,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>DevOps Star.</h1>
                 <h3 className={classes.subtitle}>
-DevOps星球是我们汇集众多行业所进行的一系列 DevOps 实践、敏捷实践、精益实践，
+DevOps Star是我们汇集众多行业所进行的一系列 DevOps 实践、敏捷实践、精益实践，
 为IT从业者提供最全面的工具使用以及最佳实践,帮助企业快速设计数字化时代的 DevOps 流程
                 </h3>
               </div>

@@ -54,5 +54,4 @@ jobs:
           REPOSITORY_NAME: "devops-club/devops"
           FOLDER: build
           CLEAN: true
-          CLEAN_EXCLUDE: '["CNAME"]'
         continue-on-error: true

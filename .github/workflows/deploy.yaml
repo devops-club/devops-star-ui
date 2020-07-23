@@ -51,7 +51,7 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          REPOSITORY_NAME: "devops-club/devops"
+          REPOSITORY_NAME: "devops-club/devops-star"
           FOLDER: build
           CLEAN: true
         continue-on-error: true
